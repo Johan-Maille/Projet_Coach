@@ -39,7 +39,8 @@
             android:name=".Conseil"
             android:label="@string/title_activity_conseil"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MauvaiseHabitude"></activity>
+        <activity android:name=".MauvaiseHabitude" />
+        <activity android:name=".Choix"></activity>
     </application>
 
 </manifest>
