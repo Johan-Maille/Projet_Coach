@@ -3,6 +3,7 @@ package com.example.frozen.coach;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -84,10 +85,13 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
 
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
+
             @Override
-            public void onClick(View view) {
-                attemptLogin();
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, SettingsActivity.class);
+                startActivity(intent);
             }
+
         });
 
         mLoginFormView = findViewById(R.id.login_form);
