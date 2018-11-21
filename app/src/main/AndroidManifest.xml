@@ -32,15 +32,15 @@
             android:label="@string/title_activity_formulaire"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Recap"
-            android:label="@string/title_activity_mauvaises_hab"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Conseil"
             android:label="@string/title_activity_conseil"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MauvaiseHabitude" />
-        <activity android:name=".Choix"></activity>
+        <activity android:name=".Choix" />
+        <activity
+            android:name=".Recap"
+            android:label="@string/title_activity_recap"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
