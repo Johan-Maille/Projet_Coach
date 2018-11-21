@@ -24,4 +24,3 @@ public class ExampleInstrumentedTest {
         assertEquals("com.example.frozen.coach", appContext.getPackageName());
     }
 }
-//test
