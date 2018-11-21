@@ -26,7 +26,11 @@
             android:label="@string/title_activity_login" />
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings"></activity>
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".Formulaire"
+            android:label="@string/title_activity_formulaire"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
