@@ -9,9 +9,10 @@ Page Récap par Mauvaises Habitudes : A généré et à coder
 
 schéma de clic
 Login
-    récap fab qui renvoie vers choix || Affiche tous les problème de l'utilisateur
-        Choix Affiche les choix disponnible dans la BDD
-            Formulaire Affiche les question liées au problème
-        MauvaiseHabitude Revoie depuis récap si click si probleme avec les informations sur le craquage de la personne et non le crackage informatique
-            Conseil Qui sont dispensé a l'utilisateur 
-    Setting
+    récap: fab qui renvoie vers choix || Affiche tous les problème de l'utilisateur, s'il clique, il va sur la Mauvaise Habitude correspondante
+        Choix: Affiche les choix disponnible dans la BDD
+            Formulaire: Affiche les question liées au problème
+        MauvaiseHabitude: Affiche les infos sur la mauvaise habitude (dernier craquage, conseils) || permet
+            Conseil: affiche les conseils liés au problème
+
+     Setting accessible partout
