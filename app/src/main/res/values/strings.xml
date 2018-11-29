@@ -180,4 +180,8 @@
     </string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_recap">Recap</string>
+    <string name="r_cap">Récap</string>
+    <string name="button">Button</string>
+
+
 </resources>
