@@ -27,8 +27,10 @@ public class Recap extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        final Button button2 = findViewById(R.id.button3);
-        button2.setOnClickListener(new View.OnClickListener() {
+
+
+        final Button secondbutton = findViewById(R.id.button3);
+        secondbutton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
