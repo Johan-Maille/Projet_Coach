@@ -12,7 +12,7 @@ Login
     récap: fab qui renvoie vers choix || Affiche tous les problème de l'utilisateur, s'il clique, il va sur la Mauvaise Habitude correspondante
         Choix: Affiche les choix disponnible dans la BDD
             Formulaire: Affiche les question liées au problème
-        MauvaiseHabitude: Affiche les infos sur la mauvaise habitude (dernier craquage, conseils) || permet
+        MauvaiseHabitude: Affiche les infos sur la mauvaise habitude (dernier craquage, conseils) || permet de voir les conseils
             Conseil: affiche les conseils liés au problème
 
      Setting accessible partout
