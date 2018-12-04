@@ -315,7 +315,7 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
             try {
                 // Simulate network access.
                 Thread.sleep(2000);
-            } catch (InterruptedException e) {
+            } catch (Exception e) {
                 return false;
             }
 
