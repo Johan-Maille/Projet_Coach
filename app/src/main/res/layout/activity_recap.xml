@@ -27,7 +27,7 @@
         android:layout_marginBottom="8dp"
         android:text="@string/r_cap"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="56sp"
         android:textStyle="normal|bold"
         android:translationX="50dp"
