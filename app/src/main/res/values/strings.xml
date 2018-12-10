@@ -89,7 +89,7 @@
     <string name="title_activity_formulaire">Formulaire</string>
     <string name="title_activity_mauvaises_hab">MauvaisesHab</string>
     <string name="title_activity_conseil">Conseil</string>
-    <!--<string name="large_text">-->
+    <string name="large_text">test</string>
         <!--"Material is the metaphor.\n\n"-->
 
         <!--"A material metaphor is the unifying theory of a rationalized space and a system of motion."-->
