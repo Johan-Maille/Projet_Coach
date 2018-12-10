@@ -26,7 +26,7 @@ public class Conseil extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         TextView helloTextView = findViewById(R.id.text_view_id);
-        helloTextView.setText(text);
+        helloTextView.setText(res);
     }
 
 //Faudra qu'on déclare ses variables dans la classe qui utilise la bdd:
@@ -34,10 +34,6 @@ public class Conseil extends AppCompatActivity {
     private static final String url = "bdd:mysql://127.0.0.1/tets"; //y a peut être un risque qu'on doive remplacer mysql par mariaDB
     private static final String user = "root";
     private static final String pass = "";
-    String text ="";
-
-
-
 
 
     //Et le code pour la connection, a foutre dans le code de l'activité:
@@ -116,7 +112,8 @@ public String affiche (String... params){
     }
 
     return res;
-   // Log.i(res);
+
 }
 
 }
+
