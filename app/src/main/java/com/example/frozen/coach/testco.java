@@ -1,27 +1,32 @@
-Faudra qu'on déclare ses variables dans la classe qui utilise la bdd:
-/*
-private static final String url = "jdbc:mysql://10.188.211.92/coach"; //y a peut être un risque qu'on doive remplacer mysql par mariaDB
+package com.example.frozen.coach;
+
+import android.os.AsyncTask;
+import android.widget.Toast;
+import android.os.AsyncTask;
+import android.widget.Toast;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.Statement;
+
+public class testco extends AsyncTask<String, Void, String> {
+
+    //Faudra qu'on déclare ses variables dans la classe qui utilise la bdd:
+
+private static final String url = "bdd:mysql://10.188.211.92/coach"; //y a peut être un risque qu'on doive remplacer mysql par mariaDB
 private static final String user = "root";
 private static final String pass = "";
-*/
 
-Faudra qu'on fasse tous ses import:
-/*
-    import android.os.AsyncTask;
-    import android.widget.Toast;
 
-    import java.sql.Connection;
-    import java.sql.DriverManager;
-    import java.sql.ResultSet;
-    import java.sql.ResultSetMetaData;
-    import java.sql.Statement;
-*/
+   // Faudra qu'on fasse tous ses import:
 
-Et le code pour la connection, a foutre dans le code de l'activité:
-/*
 
-private class ConnectMySql extends AsyncTask<String, Void, String>
-{
+
+
+    //Et le code pour la connection, a foutre dans le code de l'activité:
+
     String res = "";
 
     @Override
@@ -36,13 +41,13 @@ private class ConnectMySql extends AsyncTask<String, Void, String>
     {
         try
         {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.bdd.Driver");
             Connection con = DriverManager.getConnection(url, user, pass);
             System.out.println("Database connection success");
 
             String result = "Database Connection Successful\n";
             Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("SELECT * FROM tamere WHERE CUnePute = true"); //Notre requete ce met ici (dsl pour l'exemple, j'étais fatigué)
+            ResultSet rs = st.executeQuery("SELECT * FROM probleme "); //Notre requete ce met ici
             ResultSetMetaData rsmd = rs.getMetaData();
 
             while (rs.next())
@@ -64,6 +69,10 @@ private class ConnectMySql extends AsyncTask<String, Void, String>
     {
         txtData.setText(result);
     }
-}
 
-*/
+
+
+
+
+
+}
