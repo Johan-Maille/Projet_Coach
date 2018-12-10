@@ -2,9 +2,6 @@ package com.example.frozen.coach;
 
 import android.os.AsyncTask;
 import android.widget.Toast;
-import android.os.AsyncTask;
-import android.widget.Toast;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -15,7 +12,7 @@ public class testco extends AsyncTask<String, Void, String> {
 
     //Faudra qu'on déclare ses variables dans la classe qui utilise la bdd:
 
-private static final String url = "bdd:mysql://10.188.211.92/coach"; //y a peut être un risque qu'on doive remplacer mysql par mariaDB
+private static final String url = "bdd:mysql://127.0.0.1/tets"; //y a peut être un risque qu'on doive remplacer mysql par mariaDB
 private static final String user = "root";
 private static final String pass = "";
 
@@ -32,7 +29,7 @@ private static final String pass = "";
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-        Toast.makeText(MainActivity.this, "Please wait...", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(Conseil.this, "Please wait...", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -52,7 +49,7 @@ private static final String pass = "";
 
             while (rs.next())
             {
-                result += rs.getString(1).toString() + "\n";
+                result += rs.getString(1) + "\n";
             }
             res = result;
         }
@@ -65,9 +62,14 @@ private static final String pass = "";
     }
 
     @Override
-    protected void onPostExecute(String result)
+    public void onPostExecute(String result)
     {
-        txtData.setText(result);
+        String text = result;
+
+        System.out.println (text);
+
+       // text.setText(result);
+
     }
 
 
