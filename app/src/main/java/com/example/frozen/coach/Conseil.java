@@ -78,7 +78,7 @@ public class Conseil extends AppCompatActivity {
 
     public void onPostExecute(String result)
     {
-         text = result;
+         //text = result;
 
 
 
