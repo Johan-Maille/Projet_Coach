@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.view.View.OnClickListener;
+import android.widget.TextView;
 
 public class Recap extends AppCompatActivity implements OnClickListener {
 
@@ -20,7 +21,7 @@ public class Recap extends AppCompatActivity implements OnClickListener {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button one =  findViewById(R.id.button5);
+        TextView one =  findViewById(R.id.mauvaiseHab1);
         one.setOnClickListener(this); // calling onClick() method
         Button two =  findViewById(R.id.button3);
         two.setOnClickListener(this);
@@ -30,7 +31,7 @@ public class Recap extends AppCompatActivity implements OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
 
-            case R.id.button5:
+            case R.id.mauvaiseHab1:
                 Intent intent = new Intent(Recap.this, MauvaiseHabitude.class);
                 startActivity(intent);
                 break;
