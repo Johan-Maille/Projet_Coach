@@ -122,10 +122,9 @@
         android:id="@+id/textView4"
         android:layout_width="350dp"
         android:layout_height="32dp"
-        android:layout_marginTop="16dp"
-        android:text="Choix"
+        android:text="Choix d'une mauvaise habitude"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="15dp" />
+        tools:layout_editor_absoluteX="16dp" />
 </android.support.constraint.ConstraintLayout>
