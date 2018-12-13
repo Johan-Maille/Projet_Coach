@@ -1,8 +1,8 @@
 Faudra qu'on déclare ses variables dans la classe qui utilise la bdd:
 /*
-private static final String url = "jdbc:mysql://adresseDelabdd:Port/NomDeLaBDD"; //y a peut être un risque qu'on doive remplacer mysql par mariaDB
-private static final String user = "LeNomDeL'utilisateur";
-private static final String pass = "sonMDP";
+private static final String url = "jdbc:mysql://10.188.211.92/coach"; //y a peut être un risque qu'on doive remplacer mysql par mariaDB
+private static final String user = "root";
+private static final String pass = "";
 */
 
 Faudra qu'on fasse tous ses import:
