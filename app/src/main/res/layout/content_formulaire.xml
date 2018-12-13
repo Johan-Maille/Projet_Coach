@@ -26,7 +26,7 @@
         android:layout_marginStart="248dp"
         android:layout_marginLeft="248dp"
         android:layout_marginTop="128dp"
-        android:text="les 2"
+        android:text="les deux"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,37 +34,37 @@
         android:id="@+id/button14"
         android:layout_width="106dp"
         android:layout_height="45dp"
-        android:layout_marginStart="248dp"
-        android:layout_marginLeft="248dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginLeft="256dp"
         android:layout_marginTop="44dp"
-        android:text="3 ou plus"
+        android:text="trois ou +"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button13"
-        android:layout_width="42dp"
+        android:layout_width="65dp"
         android:layout_height="45dp"
         android:layout_marginStart="192dp"
         android:layout_marginLeft="192dp"
         android:layout_marginTop="44dp"
-        android:text="2"
+        android:text="deux"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button12"
-        android:layout_width="42dp"
+        android:layout_width="48dp"
         android:layout_height="45dp"
         android:layout_marginStart="132dp"
         android:layout_marginLeft="132dp"
         android:layout_marginTop="44dp"
-        android:text="1"
+        android:text="un"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/question 1"
+        android:id="@+id/question1"
         android:layout_width="wrap_content"
         android:layout_height="16dp"
         android:layout_marginStart="12dp"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/question 2"
+        android:id="@+id/question2"
         android:layout_width="wrap_content"
         android:layout_height="16dp"
         android:layout_marginStart="16dp"
